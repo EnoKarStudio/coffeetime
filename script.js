@@ -61,4 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
             orderSuccess.style.display = '';
         });
     }
+
+    // Форма обратной связи (заглушка)
+    const feedbackForm = document.querySelector('.feedback-form');
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Дякуємо за ваш відгук!');
+            feedbackForm.reset();
+        });
+    }
 });
